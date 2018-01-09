@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  padding-top: 3.125rem;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #333; }
+
+.App__container___3qxJc {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+.Header__root___33Xi9 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 3.125rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.Header__logo___9NRWS {
+  display: inline-block; }
+  .Header__hamburger___35_wB + .Header__logo___9NRWS {
+    margin-left: 0.5rem; }
+
+.Header__logoImage___r4-XJ {
+  display: block;
+  width: 8.75rem; }
+
+.Header__hamburger___35_wB {
+  width: 1.625rem;
+  height: 1.375rem;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer; }
+  .Header__hamburger___35_wB span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #317589;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out; }
+    .Header__open___qFY6D .Header__hamburger___35_wB span:nth-child(1) {
+      top: 18px;
+      width: 0%;
+      left: 50%; }
+    .Header__open___qFY6D .Header__hamburger___35_wB span:nth-child(2) {
+      transform: rotate(45deg); }
+    .Header__open___qFY6D .Header__hamburger___35_wB span:nth-child(3) {
+      transform: rotate(-45deg); }
+    .Header__open___qFY6D .Header__hamburger___35_wB span:nth-child(4) {
+      top: 18px;
+      width: 0%;
+      left: 50%; }
+    .Header__hamburger___35_wB span:nth-child(1) {
+      top: 0; }
+    .Header__hamburger___35_wB span:nth-child(2), .Header__hamburger___35_wB span:nth-child(3) {
+      top: 9px; }
+    .Header__hamburger___35_wB span:nth-child(4) {
+      top: 18px; }
+
+.Header__fullscreen___1P1z6 {
+  width: 100%;
+  height: calc(100vh - 3.125rem);
+  padding: 2rem;
+  position: absolute;
+  top: 100%;
+  left: -100vw;
+  transition: left .2s;
+  overflow: hidden;
+  background-color: #317589;
+  color: white; }
+  .Header__open___qFY6D .Header__fullscreen___1P1z6 {
+    left: 0; }
+.Hero__root___3k0Bb {
+  padding: 5rem 2rem;
+  color: white;
+  text-align: center;
+  background-color: #317589;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply; }
+
+.Hero__heading___1UxGd {
+  margin: 0;
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 1.5; }
+.Button__root___32dLk {
+  display: inline-block;
+  padding: 0 1.5rem;
+  height: 3.125rem;
+  line-height: 2.75rem;
+  border-radius: 1.875rem;
+  border: 0.1875rem solid #317589;
+  color: white;
+  font-size: 1rem;
+  background: none;
+  text-decoration: none; }
+  .Button__root___32dLk:hover {
+    border-color: #49a3be; }
+  [class^="Hero__heading"] + .Button__root___32dLk {
+    margin-top: 1.5rem; }
+.Carousel__slide___3M3c2 {
+  background-color: #e5d8e3; }
+  .Carousel__slide___3M3c2 + .Carousel__slide___3M3c2 {
+    margin-left: .625rem; }
+
+.Carousel__image___nKm6u {
+  height: 7rem;
+  mix-blend-mode: multiply; }
+.Card__root___1quJv {
+  display: block;
+  text-decoration: none;
+  color: inherit; }
+  .Card__root___1quJv + .Card__root___1quJv {
+    margin-top: 1rem; }
+
+.Card__imageContainer___336wI {
+  background-color: #efe7ee; }
+  .Card__root___1quJv:hover .Card__imageContainer___336wI {
+    background-color: #d1b9cc; }
+
+.Card__image___2hK5z {
+  display: block;
+  width: 100%;
+  mix-blend-mode: multiply; }
+
+.Card__content___17nq8 {
+  padding: 1rem;
+  background-color: white; }
+
+.Card__heading___3peg3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  line-height: 1;
+  text-decoration: none; }
+  .Card__root___1quJv:hover .Card__heading___3peg3 {
+    text-decoration: underline; }
+
+.Card__text___1YIhy {
+  margin: 1rem 0 0;
+  text-decoration: none; }
+  .Card__root___1quJv:hover .Card__text___1YIhy {
+    text-decoration: underline; }
+.Quote__root___1b5Ef {
+  position: relative;
+  padding-left: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  .Quote__root___1b5Ef:before {
+    content: '"';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 5.635rem;
+    line-height: 1; }
+
+.Quote__text___2rRWF {
+  font-size: 1rem;
+  font-style: italic; }
+
+.Quote__source___3Vh8v {
+  font-size: .75rem;
+  margin-top: .5rem; }
+.Home__hero___2h6-7 {
+  background-image: url(/static/media/hero-homepage.ccf3f192.jpg); }
+
+.Home__intro___2bmMv {
+  padding: 2rem 1.5rem;
+  margin: 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  text-align: center; }
+
+.Home__content___3ndd7 {
+  padding: 1rem;
+  line-height: 1.7; }
+
+.Home__services___a73QU {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #F2F1EF;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.Home__subheading___yy_6G {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-family: Oswald;
+  font-size: 1.25rem;
+  text-align: center; }
+.Estimate__hero___1Fd6n {
+  background-image: url(/static/media/edmonton-winter-window-cleaning-01.5c5462bc.jpg); }
+
+.Estimate__form___2qrPj {
+  max-width: 31.25rem;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  background-color: white; }
+
+.Estimate__label___3LUD9 {
+  font-size: .875rem;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 1.25rem; }
+  .Estimate__checkbox___3KyE_ + .Estimate__label___3LUD9 {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    font-weight: normal;
+    font-size: 1rem;
+    border-top: 1px solid #f0f0f0;
+    padding-left: 1.75rem;
+    padding-right: 1rem; }
+    .Estimate__checkbox___3KyE_ + .Estimate__label___3LUD9:before {
+      content: '';
+      margin-right: 10px;
+      width: 1rem;
+      height: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background: white;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -.5rem; }
+    .Estimate__checkbox___3KyE_ + .Estimate__label___3LUD9:after {
+      content: '';
+      position: absolute;
+      left: .25rem;
+      top: 50%;
+      margin-top: -1px;
+      background: white;
+      width: 2px;
+      height: 2px;
+      box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+      transform: rotate(45deg); }
+  .Estimate__checkbox___3KyE_:hover + .Estimate__label___3LUD9:before,
+  .Estimate__checkbox___3KyE_:focus + .Estimate__label___3LUD9:before {
+    border-color: #317589; }
+  .Estimate__checkbox___3KyE_:checked + .Estimate__label___3LUD9:before {
+    background: #317589; }
+  .Estimate__checkboxGroup___2LGm6 .Estimate__label___3LUD9 {
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0; }
+
+.Estimate__text___2p54Q {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 .5rem; }
+
+.Estimate__text___2p54Q:focus,
+.Estimate__select___2xao3:focus,
+.Estimate__textarea___2168f:focus {
+  outline: 0;
+  border-color: #317589; }
+
+.Estimate__text___2p54Q,
+.Estimate__textarea___2168f {
+  display: block;
+  width: 100%;
+  margin: 0;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px; }
+  .Estimate__text___2p54Q::placeholder,
+  .Estimate__textarea___2168f::placeholder {
+    color: #ccc; }
+
+.Estimate__textarea___2168f {
+  padding: .5rem; }
+  .Estimate__select___2xao3 + .Estimate__textarea___2168f {
+    margin-top: .5rem; }
+
+.Estimate__select___2xao3 {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1rem;
+  background: none;
+  border: 1px solid #ccc; }
+
+.Estimate__checkbox___3KyE_ {
+  position: absolute;
+  opacity: 0; }
+
+.Estimate__subheading___1S3T9 + .Estimate__checkboxGroup___2LGm6 {
+  margin-top: 1rem; }
+
+.Estimate__subheading___1S3T9 {
+  margin-top: 2rem;
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem; }
+
+.Estimate__subheading___1S3T9 .Estimate__small___1n7WZ {
+  display: block;
+  color: #ccc;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+
+.Estimate__hidden___16sks {
+  display: none; }
+body{margin:0;padding:0;font-family:sans-serif}
+/*# sourceMappingURL=main.4eb212dc.css.map*/
