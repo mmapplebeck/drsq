@@ -1,0 +1,19 @@
+@import "variables";
+
+.root {
+  padding: 5rem 2rem;
+  color: white;
+  text-align: center;
+  background-color: $color-thousand-herb;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.heading {
+  margin: 0;
+  font-family: $font-family-primary;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}

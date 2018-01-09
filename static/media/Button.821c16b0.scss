@@ -1,0 +1,22 @@
+@import "variables";
+
+.root {
+  display: inline-block;
+  padding: 0 1.5rem;
+  height: 3.125rem;
+  line-height: (3.125rem - (0.1875rem * 2));
+  border-radius: 1.875rem;
+  border: 0.1875rem solid $color-thousand-herb;
+  color: white;
+  font-size: 1rem;
+  background: none;
+  text-decoration: none;
+
+  &:hover {
+    border-color: lighten($color-thousand-herb, 15%);
+  }
+
+  [class^="Hero__heading"] + & {
+    margin-top: 1.5rem;
+  }
+}

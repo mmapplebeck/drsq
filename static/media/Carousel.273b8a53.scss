@@ -1,0 +1,14 @@
+@import "variables";
+
+.slide {
+  background-color: mix($color-thin-color, white, 30%);
+
+  .slide + & {
+    margin-left: .625rem;
+  }
+}
+
+.image {
+  height: 7rem;
+  mix-blend-mode: multiply;
+}

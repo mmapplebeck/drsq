@@ -1,0 +1,16 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  padding-top: $header-height;
+  font-size: 16px; // For rem sizing
+  line-height: 1.375; // 22px
+  color: $color-text;
+}
+
+.container {
+  @include container;
+}

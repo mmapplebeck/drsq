@@ -1,0 +1,29 @@
+@import "variables";
+
+.root {
+  position: relative;
+  padding-left: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  &:before {
+    content: '"';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: $font-family-primary;
+    font-weight: bold;
+    font-size: 5.635rem;
+    line-height: 1;
+  }
+}
+
+.text {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.source {
+  font-size: .75rem;
+  margin-top: .5rem;
+}

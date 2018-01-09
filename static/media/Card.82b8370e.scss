@@ -1,0 +1,52 @@
+@import "variables";
+
+.root {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
+  .root + & {
+    margin-top: 1rem;
+  }
+}
+
+.imageContainer {
+  background-color: lighten($color-thin-color, 35%);
+
+  .root:hover & {
+    background-color: lighten($color-thin-color, 20%);
+  }
+}
+
+.image {
+  display: block;
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+
+.content {
+  padding: 1rem;
+  background-color: white;
+}
+
+.heading {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-family: $font-family-primary;
+  line-height: 1;
+  text-decoration: none;
+
+  .root:hover & {
+    text-decoration: underline;
+  }
+}
+
+.text {
+  margin: 1rem 0 0;
+  text-decoration: none;
+
+  .root:hover & {
+    text-decoration: underline;
+  }
+}

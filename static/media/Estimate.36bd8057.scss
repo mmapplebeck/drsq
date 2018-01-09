@@ -1,0 +1,165 @@
+@import "variables";
+
+.hero {
+  background-image: url('./carouselImages/edmonton-winter-window-cleaning-01.jpg');
+}
+
+.form {
+  max-width: 31.25rem;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  background-color: white;
+}
+
+.label {
+  font-size: .875rem;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 1.25rem;
+
+  .checkbox + & {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    font-weight: normal;
+    font-size: 1rem;
+    border-top: 1px solid #f0f0f0;
+    padding-left: 1.75rem;
+    padding-right: 1rem;
+
+    &:before {
+      content: '';
+      margin-right: 10px;
+      width: 1rem;
+      height: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background: white;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -.5rem;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: .25rem;
+      top: 50%;
+      margin-top: -1px;
+      background: white;
+      width: 2px;
+      height: 2px;
+      box-shadow:
+        2px 0 0 white,
+        4px 0 0 white,
+        4px -2px 0 white,
+        4px -4px 0 white,
+        4px -6px 0 white,
+        4px -8px 0 white;
+      transform: rotate(45deg);
+    }
+  }
+
+  .checkbox:hover + &,
+  .checkbox:focus + & {
+    &:before {
+      border-color: $color-thousand-herb;
+      //background: #f35429;
+    }
+  }
+
+  // .checkbox:focus + & {
+  //   &:before {
+  //     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  //   }
+  // }
+
+  .checkbox:checked + & {
+    &:before {
+      background: $color-thousand-herb;
+    }
+  }
+
+  .checkboxGroup & {
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+}
+
+.text {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 .5rem;
+}
+
+.text,
+.select,
+.textarea {
+  &:focus {
+    outline: 0;
+    border-color: $color-thousand-herb;
+  }
+}
+
+.text,
+.textarea {
+  display: block;
+  width: 100%;
+  margin: 0;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: #ccc;
+  }
+}
+
+.textarea {
+  padding: .5rem;
+
+  .select + & {
+    margin-top: .5rem;
+  }
+}
+
+.select {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1rem;
+  background: none;
+  border: 1px solid #ccc;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkboxGroup {
+  .subheading + & {
+    margin-top: 1rem;
+  }
+}
+
+.subheading {
+  margin-top: 2rem;
+  font-family: $font-family-primary;
+  font-size: 1.5rem;
+}
+
+.small {
+  .subheading & {
+    display: block;
+    color: #ccc;
+    font-family: $font-family-secondary;
+  }
+}
+
+.hidden {
+  display: none;
+}
